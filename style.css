@@ -1,0 +1,148 @@
+/* Estilos básicos para adaptabilidad y diseño */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0,5;
+    padding: 0,5;
+    background-color: #f9f9f9;
+    color: #ff34ab;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fd6899;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+    position: relative; /* Para alinear el ícono */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .icono {
+    position: absolute;
+    top: -20px; /* Ajuste de posición */
+    left: 50%; /* Ajuste de posición */
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card .icono i {
+    font-size: 24px;
+    color: #ff47a3; /* Color del ícono (corazón rojo) */
+}
+
+.card h3 {
+    color: #000000;
+}
+
+.card p {
+    color: #000000;
+}
+
+/* Sección de Contacto */
+.contacto {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-bottom: 20px;
+    color: #070202;
+}
+
+.contacto-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacto-datos {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.contacto-datos p {
+    font-size: 18px;
+    color: #030000;
+}
+
+.contacto-datos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto-datos ul li {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.contacto-datos ul li strong {
+    font-weight: bold;
+    color: #d80877;
+}
+
+.contacto-imagen {
+    flex: 0,5;
+    padding: 18px;
+}
+
+.contacto-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #f7488b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #f56db1;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    transition: border-bottom 0.3s ease;
+}
+
+footer a:hover {
+    border-bottom: 1px solid transparent ;
+}
